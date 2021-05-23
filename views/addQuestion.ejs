@@ -1,0 +1,21 @@
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <h1>Enter the new question</h1>
+    <form action="/addquestion" method="POST">
+      <label for="name">Name</label>
+      <input type="text" name="name" required />
+      <label for="linkTo">Link</label>
+      <input type="text" name="linkTo" required />
+      <label for="topic">Topic</label>
+      <select name="topic" required>
+        <% if(topics.length>0){ topics.forEach(topic=>{ %>
+        <option value="<%= topic._id %>"><%=topic.name%></option>
+        <% }); } %>
+      </select>
+      <button>Submit</button>
+    </form>
+   
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
