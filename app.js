@@ -9,7 +9,8 @@ const adminRoutes = require("./routes/adminRoutes");
 const contentRoutes = require("./routes/contentRoutes");
 
 const mongoose = require("mongoose");
-const dbURI =   "mongodb+srv://harshit:1606@cluster0.oiqki.mongodb.net/projectdb?retryWrites=true&w=majority";
+const dbURI =  "mongodb+srv://harshit:1606@cluster0.oiqki.mongodb.net/?retryWrites=true&w=majority";
+
 
 mongoose
   .connect(dbURI, {
