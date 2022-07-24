@@ -9,7 +9,7 @@
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-    <title>Login</title>
+    <title><%=title%></title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -39,44 +39,62 @@ https://templatemo.com/tm-545-finance-business
     </div>  
     <!-- ***** Preloader End ***** -->
 
+    
     <%- include('./partials/nav.ejs') %>
+    
 
     <!-- Page Content -->
-    <div class="page-heading header-text" >
-     
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Add a Question</h1>
+            <span>feel free to add a Question now!</span>
+          </div>
+        </div>
+      </div>
     </div>
 
-   
+  
 
     <div class="callback-form contact-us">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Log<em> In</em></h2>
+              <h2>Please fill this <em>Form</em></h2>
             </div>
           </div>
           <div class="col-md-12">
             <div class="contact-form">
-              <form id="form" name="form" action="" method="get">
-                
+              <form id="contact" action="/addquestion" method="POST">
+                <div class="row">
                   <div class="col-lg-4 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="email" type="email" class="form-control"  placeholder="Email Address" required="">
+                      <input name="name" type="text" class="form-control" id="name" placeholder="Name of Question" required="">
                     </fieldset>
-                    <div class="email error"></div>
                   </div>
+                  
                   <div class="col-lg-4 col-md-12 col-sm-12">
                     <fieldset>
-                      <input name="password" type="password" class="form-control"  placeholder="Password" required="">
+                      <input name="linkTo" type="text" class="form-control" id="linkTo" placeholder="Link" required="">
                     </fieldset>
-                    <div class="password error"></div>
                   </div>
-                 
+
+
+<p></p>
+<div class="col-lg-4 col-md-12 col-sm-12">
+                        <select appearance="none" id="topic" name="topic" required>
+                  <% if(topics.length>0){ topics.forEach(topic=>{ %>
+                    <option value="<%=topic._id%>"><%=topic.name%></option>
+                  <%});} %>
+              </select>
+            </div>
+<div></div>
+
                   <div class="col-lg-12">
                     <fieldset>
-                      <button class="filled-button">Login</button>
-                    </fieldset>
+                      <button type="submit" id="form-submit" class="filled-button" href="/topic">Submit</button>
                   </div>
                 </div>
               </form>
@@ -86,45 +104,11 @@ https://templatemo.com/tm-545-finance-business
       </div>
     </div>
 
-    
-<script>const form =document.querySelector('form');
-  const emailError = document.querySelector('.email.error');
-  const passwordError = document.querySelector('.password.error');
-  form.addEventListener('submit',async(e)=>{
-      e.preventDefault();    //prevents deafult action of refreshing of page
-
-
-      //reset errors
-      emailError.textContent='';
-      
-       passwordError.textContent='';
-      //get values
-          const email = form.email.value;
-          const password= form.password.value;
-          try{
-              const res = await fetch('/login',{
-                  method: 'POST',
-                  body: JSON.stringify({email:email,password:password}),
-                  headers:{'Content-Type': "application/json"}
-              });
-              const data=await res.json();
-              console.log(data);
-              if(data.errors)
-              {
-                  emailError.textContent=data.errors.email;
-                  
-                  passwordError.textContent=data.errors.password;
-              } 
-
-              if(data.user)
-              {
-                  location.assign('/home');
-              }
-          }
-          catch(err){console.log(err);}
-  });</script>
    
 
+    
+
+    <%- include('./partials/footer.ejs') %>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -147,6 +131,5 @@ https://templatemo.com/tm-545-finance-business
       }
     </script>
 
-<%- include('./partials/footer.ejs') %>
   </body>
 </html>

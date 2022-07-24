@@ -1,9 +1,176 @@
+<!DOCTYPE html>
 <html lang="en">
+
+ 
   <%- include('./partials/head.ejs') %>
   <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+   
+
     <%- include('./partials/nav.ejs') %>
-    <h1>Welcome to the Interview  Questions Tracker site!</h1>
-    <a href="/topic" class="btn">View Topics</a>
+             
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+          <!-- Item -->
+          <div class="item item-1">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>we are ready to help you</h6>
+                  <h4>INTERVIEW<br>&amp; Guidance</h4>
+                  <p>We provide the best-in-class questions for your interview preparation. Moreover , its FREE! </p>
+                  <a href="/home" class="filled-button">Get started</a>
+                </div>
+            </div>
+          </div>
+         
+          <div class="item item-2">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>You can help too</h6>
+                  <h4>CONTRIBUTE<br>&amp; NOW</h4>
+                  <p>Now you can even help others by posting questions on this platform that you find unique and interesting. So now, grow and help others to grow!</p>
+                  <% if(user){  %>
+                    <a class="filled-button" href="/addquestion">Post A Question</a>
+      
+      <% }else{ %>
+                    <a class="filled-button" href="/login">Post A Question</a>
+       <% }%>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    
+    <div class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Features </h2>
+              <span>A plethora of options for you</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/service_02.jpg" alt="">
+              <div class="down-content">
+                <h4>Questions </h4>
+                <p>Various topics for you to crack the toughest of interviews.</p>
+                <a href="/topic" class="filled-button">Learn NOW</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/service_01.jpg" alt="">
+              <div class="down-content">
+                <h4>Contribute</h4>
+                <p>Help others by posting questions on this platform.</p>
+                <% if(user){  %>
+              <a class="filled-button" href="/addquestion">Contribute</a>
+<% }else{ %>
+              <a class="filled-button" href="/login">Contribute</a>
+ <% }%>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="assets/images/contact_us.jpg" alt="">
+              <div class="down-content">
+                <h4>About Us</h4>
+                <p>Know more about our team and the work they do.</p>
+                <a href="/about" class="filled-button">About Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>What they say <em>ABOUT US</em></h2>
+              <span>testimonials from our greatest students</span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="owl-testimonials owl-carousel">
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>Vaibhav Srivastava</h4>
+                  <span>IIT Bombay</span>
+                  <p>"I practice daily from this website. Quality question catalogue from the best sites!"</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>Chaitanya Aggarwal</h4>
+                  <span>MIT</span>
+                  <p>"The best UI with a variety of informative and conceptual questions. Great Work."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+
+
     <%- include('./partials/footer.ejs') %>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
   </body>
 </html>
+
+
+
+
+
+
+
+
