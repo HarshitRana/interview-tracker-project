@@ -42,7 +42,7 @@ const question_get = (req, res) => {
 
 const Ques_get = (req, res) => {
   Topics.find().then((result) => {
-    res.render("addQuestion", { title: "New Question", topics: result });
+    res.render("addquestion", { title: "New Question", topics: result });
   });
 };
 
@@ -54,7 +54,7 @@ const Ques_post = (req, res) => {
   });
   question
     .save()
-    .then((result) => res.redirect("/topic/" + topic))
+    .then((result) => res.redirect("/topic"))
     .catch((err) => console.log(err));
 };
 
