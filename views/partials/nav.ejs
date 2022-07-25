@@ -32,9 +32,6 @@
             <a class="nav-link" href="/about">About</a>
           </li>
                    
-          <% if(user){  %>
-
-
             <li class="nav-item">
               <a class="nav-link" href="/topic">Topics</a>
             </li>
@@ -44,29 +41,18 @@
               <a class="nav-link" href="/addquestion">Contribute</a>
             </li>
 
-
+            <% if(user){  %>
           <li class="nav-item">
             <a class="nav-link" href="/logout">Logout</a>
           </li>
-          <% }else{ %>
-
-            <li class="nav-item">
-              <a class="nav-link" href="/login">Topics</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="/login">Contribute</a>
-            </li>
-
+          <% } else { %>
             <li class="nav-item">
               <a class="nav-link" href="/login">Login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/signup">SignUp</a>
             </li>
-
-            
-            <% }%>
+            <% } %>
         </ul>
       </div>
     </div>
