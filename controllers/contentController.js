@@ -42,7 +42,7 @@ const question_get = (req, res) => {
 
 const Ques_get = (req, res) => {
   Topics.find().then((result) => {
-    res.render("addQuestion", { title: "New Question", topics: result });
+    res.render("addquestion", { title: "New Question", topics: result });
   });
 };
 
