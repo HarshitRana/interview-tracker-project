@@ -54,7 +54,7 @@ const Ques_post = (req, res) => {
   });
   question
     .save()
-    .then((result) => res.redirect("/topic/" + topic))
+    .then((result) => res.redirect("/topic"))
     .catch((err) => console.log(err));
 };
 
