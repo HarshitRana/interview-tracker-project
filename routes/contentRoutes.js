@@ -8,9 +8,9 @@ router.get("/topic", requireAuth, contentController.topic_get);
 
 router.get("/topic/:name", requireAuth, contentController.question_get);
 
-router.delete("/topic/:id", contentController.question_delete);
+router.delete("/topic/:id", requireAuth, contentController.question_delete);
 
-router.get("/addquestion", contentController.Ques_get);
+router.get("/addquestion", requireAuth, contentController.Ques_get);
 
-router.post("/addquestion", contentController.Ques_post);
+router.post("/addquestion", requireAuth, contentController.Ques_post);
 module.exports = router;
