@@ -55,7 +55,7 @@ This installs all necessary packages written in package.json file.
  
 
  ## Questions Section 
- ![questions](https://github.com/HarshitRana/interview-tracker-project/blob/deploy-test/uploads/questions.jpg)
+ ![questions](https://github.com/HarshitRana/interview-tracker-project/blob/deploy-test/uploads/question.jpg)
  
 
  
