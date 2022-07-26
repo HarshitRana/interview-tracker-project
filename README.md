@@ -38,35 +38,35 @@ This installs all necessary packages written in package.json file.
  ##### That’s it, You have successfully run this project on your machine!!!
  
  ## Home Page 
- ![home page-1](https://github.com/yashguptaji/InterviewTracker/blob/main/uploads/1.png)
- ![home page-2](https://github.com/yashguptaji/InterviewTracker/blob/main/uploads/2.png)
+ ![home page-1](https://github.com/HarshitRana/interview-tracker-project/blob/deploy-test/uploads/home1.jpg)
+ ![home page-2](https://github.com/HarshitRana/interview-tracker-project/blob/deploy-test/uploads/home2.jpg)
 
 
 
  ## Login & Signup page
- ![login](https://github.com/yashguptaji/InterviewTracker/blob/main/uploads/4.png)
- ![sign up](https://github.com/yashguptaji/InterviewTracker/blob/main/uploads/3.png)
+ ![login](https://github.com/HarshitRana/interview-tracker-project/blob/deploy-test/uploads/login.jpg)
+ ![sign up](https://github.com/HarshitRana/interview-tracker-project/blob/deploy-test/uploads/signup.jpg)
 
 
 
  ## Topics Section
- ![programming-1](https://github.com/yashguptaji/InterviewTracker/blob/main/uploads/5.png)
+ ![topics](https://github.com/HarshitRana/interview-tracker-project/blob/deploy-test/uploads/topics.jpg)
  
  
 
  ## Questions Section 
- ![programming-2](https://github.com/yashguptaji/InterviewTracker/blob/main/uploads/6.png)
+ ![questions](https://github.com/HarshitRana/interview-tracker-project/blob/deploy-test/uploads/questions.jpg)
  
 
  
  ## Contribution Section
- ![programming-3](https://github.com/yashguptaji/InterviewTracker/blob/main/uploads/7.png)
+ ![contri](https://github.com/HarshitRana/interview-tracker-project/blob/deploy-test/uploads/contri.jpg)
  
  
 
  
  ## Admin Panel 
- ![admin](https://github.com/yashguptaji/InterviewTracker/blob/main/uploads/8.png)
+ ![admin](https://github.com/HarshitRana/interview-tracker-project/blob/deploy-test/uploads/admin.jpg)
 
 
 
