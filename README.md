@@ -1,10 +1,11 @@
 # Interview Tracker
 
+Project Deployed ----> [**Try Here!**](https://hr16-interview-tracker.herokuapp.com/)
+
 It is an application which stores coding questions and their links categorized by topics. A user can read and note important questions efficiently through the website. If a user wants to add a new question from a recent coding test/interview, he can contribute to the question catalogue as well!
 
 The app is built with [**Node.js**](https://nodejs.org) & [**Express**](https://expressjs.com) and  uses [**MongoDB**](https://www.mongodb.com/) as database.
    
-Project Deployed [**Here!**](https://cowinvaxcheck.herokuapp.com/)
 
 
 ## Setting up Environment for running this project
