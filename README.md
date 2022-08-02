@@ -1,6 +1,6 @@
 # Interview Tracker
 
-[**Try Here!**](https://cowinvaxcheck.herokuapp.com/)
+Project Deplyed ----> [**Try Here!**](https://cowinvaxcheck.herokuapp.com/)
 
 It is an application which stores coding questions and their links categorized by topics. A user can read and note important questions efficiently through the website. If a user wants to add a new question from a recent coding test/interview, he can contribute to the question catalogue as well!
 
