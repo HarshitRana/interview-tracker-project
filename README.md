@@ -4,7 +4,7 @@ It is an application which stores coding questions and their links categorized b
 
 The app is built with [**Node.js**](https://nodejs.org) & [**Express**](https://expressjs.com) and  uses [**MongoDB**](https://www.mongodb.com/) as database.
    
-The Project is deployed [**Here!**](https://cowinvaxcheck.herokuapp.com/)
+[**Try Here!**](https://cowinvaxcheck.herokuapp.com/)
 
 
 ## Setting up Environment for running this project
